@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    display: grid;
+grid-template-columns: 25% 25% 25% 25% ;
+width: 75vw;
+height: 75vh;
+margin: 0 auto;
+}
+
+
+img{
+    width: 100%;
+    border: 10px solid black; 
+}
+
+
+
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/677/922/425/pokemon-pokemon-red-and-blue-blastoise-pokemon-bulbasaur-pokemon-wallpaper-preview.jpg");
+}
+
