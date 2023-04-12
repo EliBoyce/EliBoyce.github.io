@@ -18,8 +18,9 @@ document.querySelectorAll("img").forEach(function(drag){
 })
 
 document.querySelector("div").addEventListener("click",function(e){
-    if(e.target.src == "http://127.0.0.1:5501/images/pokeball.png"){
-        
+   // if(e.target.src == "http://127.0.0.1:5501/images/pokeball.png"){
+    if(e.target.src.endsWith ("/images/pokeball.png")){
+    
         e.target.src = e.target.attributes["datasrc"].value
         clicks = clicks + 1
         //remember the card you clicked
