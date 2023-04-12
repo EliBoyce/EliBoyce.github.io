@@ -46,7 +46,8 @@ document.querySelector("div").addEventListener("click",function(e){
             if(firstcard.src == secondcard.src){
                 console.log("match")
                 var scott = new Audio()
-                scott.src = "/sounds/" + firstcard.src.slice(29,-4) + ".mp3"
+                scott.src = "/sounds/" +
+                 firstcard.src.slice(secondcard.src.lastIndexOf("/")+1,-4) + ".mp3"
                 scott.play()
                 score = score + 1
                 console.log("Your score is " + score)
